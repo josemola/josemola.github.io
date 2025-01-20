@@ -11,23 +11,25 @@
         <h1>José Sánchez Galeote<br> Arquitecto</h1>
         <nav>
             <ul>
-                <li><a href="#acerca">Acerca de</a></li>
-                <li><a href="#soporte">Soporte</a></li>
-                <li><a href="#testimonios">Testimonios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#acerca" aria-label="Acerca de mí">Acerca de</a></li>
+                <li><a href="#soporte" aria-label="Soporte">Soporte</a></li>
+                <li><a href="#testimonios" aria-label="Testimonios">Testimonios</a></li>
+                <li><a href="#precios" aria-label="Precios">Precios</a></li>
+                <li><a href="#faq" aria-label="Preguntas Frecuentes">Preguntas Frecuentes</a></li>
+                <li><a href="#contacto" aria-label="Contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="acerca" class="section">
         <h2>Acerca de mí</h2>
-        <img src="datos/tu-imagen-acerca.jpg" alt="Imagen de José Sánchez" class="imagen-acerca">
+        <img src="datos/tu-imagen-acerca.jpg" alt="José Sánchez presentándose como arquitecto" class="imagen-acerca">
         <p>Soy un arquitecto apasionado por diseñar espacios funcionales y estéticamente agradables. Mi objetivo es transformar ideas en realidades arquitectónicas.</p>
     </section>
 
     <section id="soporte" class="section">
         <h2>Soporte</h2>
-        <img src="datos/tu-imagen-soporte.jpg" alt="Imagen de soporte" class="imagen-soporte">
+        <img src="datos/tu-imagen-soporte.jpg" alt="Imagen de soporte técnico brindado por José Sánchez" class="imagen-soporte">
         <p>Ofrezco asesoría y soporte en cada etapa del proceso de construcción. No dudes en contactarme para más información.</p>
     </section>
 
@@ -43,39 +45,89 @@
         </div>
     </section>
 
+    <section id="precios" class="section">
+        <h2>Precios</h2>
+        <div class="precio-container">
+            <div class="precio">
+                <h3>Paquete Básico</h3>
+                <p>Desde 500€</p>
+                <ul>
+                    <li>Consultoría inicial</li>
+                    <li>Diseño preliminar</li>
+                    <li>2 revisiones</li>
+                </ul>
+                <button>Comprar</button>
+            </div>
+            <div class="precio">
+                <h3>Paquete Avanzado</h3>
+                <p>Desde 1500€</p>
+                <ul>
+                    <li>Consultoría completa</li>
+                    <li>Diseño completo</li>
+                    <li>Soporte durante construcción</li>
+                </ul>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-container">
+            <div class="faq-col">
+                <div class="faq-card">
+                    <h4>¿Cuánto cuesta contratar un arquitecto?</h4>
+                    <p>Los precios dependen del tamaño y complejidad del proyecto. Consultar los paquetes para más detalles.</p>
+                </div>
+                <div class="faq-card">
+                    <h4>¿En qué consiste el proceso de diseño?</h4>
+                    <p>El proceso incluye reuniones iniciales, diseño preliminar, revisiones y entrega de planos finales.</p>
+                </div>
+            </div>
+            <div class="faq-col">
+                <div class="faq-card">
+                    <h4>¿Cuánto tiempo tarda en completarse un proyecto?</h4>
+                    <p>El tiempo varía según la complejidad, pero generalmente entre 2 a 4 meses.</p>
+                </div>
+                <div class="faq-card">
+                    <h4>¿Puedo hacer cambios durante el proceso?</h4>
+                    <p>Sí, ofrecemos revisiones para ajustarnos a tus necesidades durante todo el proceso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contacto" class="section">
         <h2>Contacto</h2>
-        <form>
+        <form id="contacto-form" aria-labelledby="contacto">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required aria-required="true">
             
             <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required aria-required="true">
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="123-456-7890">
             
             <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required aria-required="true"></textarea>
             
-            <button type="submit">Enviar</button>
+            <button type="submit" aria-label="Enviar mensaje">Enviar</button>
         </form>
+        <div id="confirmacion" style="display: none;">¡Gracias por contactarnos! Te responderemos pronto.</div>
     </section>
+
+    <a href="#acerca" id="volver-arriba" style="display: block; text-align: center; margin: 20px 0;">Volver arriba</a>
 
     <footer>
         <p>&copy; 2025 José Sánchez Galeote. Todos los derechos reservados.</p>
     </footer>
     
+    <script>
+        document.getElementById('contacto-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('confirmacion').style.display = 'block';
+        });
+    </script>
 </body>
-</footer>
-<script type="text/javascript">
-    (function(d, t) {
-        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-        v.onload = function() {
-          window.voiceflow.chat.load({
-            verify: { projectID: '67444a3abf1039db0b33e33d' },
-            url: 'https://general-runtime.voiceflow.com',
-            versionID: 'production'
-          });
-        }
-        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-    })(document, 'script');
-  </script>
 </html>
