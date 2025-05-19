@@ -1,144 +1,135 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>SGE 4 everyone</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/cssJSG.css">
-        <link rel ="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon">
-        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <img src="./imgs/SGE.jpg">
-            <h1>Sistemas de Gestión Empresarial</h1>
-        </header>
-        
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitecto JSG - Landing Page</title>
+    <link rel="stylesheet" href="datos/styles.css">
+</head>
+<body>
+    <header>
+        <h1>José Sánchez Galeote<br> Arquitecto</h1>
         <nav>
-            <button class="abrir" id="hamburguesa"> ☰ </button>
-            <ul class="ocultar" id="lista">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./otraswebs/instalacion.html">Instalación</a></li>
-                <li><a href="./otraswebs/accesoseguro.html">Acceso seguro</a></li>
-                <li><a href="./otraswebs/usoSGE.html">Uso del SGE</a></li>
+            <ul>
+                <li><a href="#acerca" aria-label="Acerca de mí">Acerca de</a></li>
+                <li><a href="#soporte" aria-label="Soporte">Soporte</a></li>
+                <li><a href="#testimonios" aria-label="Testimonios">Testimonios</a></li>
+                <li><a href="#precios" aria-label="Precios">Precios</a></li>
+                <li><a href="#faq" aria-label="Preguntas Frecuentes">Preguntas Frecuentes</a></li>
+                <li><a href="#contacto" aria-label="Contacto">Contacto</a></li>
             </ul>
         </nav>
-        
-        <!-- Lo de arriba es fijo para todas las páginas -->
+    </header>
 
+    <section id="acerca" class="section">
+        <h2>Acerca de mí</h2>
+        <img src="datos/tu-imagen-acerca.jpg" alt="José Sánchez presentándose como arquitecto" class="imagen-acerca">
+        <p>Soy un arquitecto apasionado por diseñar espacios funcionales y estéticamente agradables. Mi objetivo es transformar ideas en realidades arquitectónicas.</p>
+    </section>
 
+    <section id="soporte" class="section">
+        <h2>Soporte</h2>
+        <img src="datos/tu-imagen-soporte.jpg" alt="Imagen de soporte técnico brindado por José Sánchez" class="imagen-soporte">
+        <p>Ofrezco asesoría y soporte en cada etapa del proceso de construcción. No dudes en contactarme para más información.</p>
+    </section>
 
-        
-        <aside>
-            
-             <section>
-                <h2>¿Listo para transformar tu empresa?</h2>
-                <p>Descubre cómo los sistemas de gestión empresarial pueden optimizar tus operaciones y aumentar tu rentabilidad.</p>
-                <a href="https://www.odoo.com/es_ES" target="_blank" class="rat">Explorar Sistema</a>
-                <p></p>
-                
-            </section>
-            <img src="./imgs/parindex.webp">
-        </aside>
-        
+    <section id="testimonios" class="section">
+        <h2>Testimonios</h2>
+        <div class="testimonio">
+            <p>"José transformó nuestras ideas en un hogar increíble. Su atención al detalle es insuperable."</p>
+            <p><strong>- luna.rodriguez14@email.com</strong></p>
+        </div>
+        <div class="testimonio">
+            <p>"El trabajo de José en nuestro proyecto comercial fue excepcional. Altamente recomendado."</p>
+            <p><strong>- juan.garcia92@email.com</strong></p>
+        </div>
+    </section>
 
-
-
-        <main>
-            <section class="pato">
-                <h2>Bienvenido a Sistemas de Gestión Empresarial</h2>
-                <p>Los Sistemas de Gestión Empresarial (ERP) integran y automatizan procesos clave de tu empresa, mejorando la eficiencia y la toma de decisiones.</p>
-            </section>
-
-            
-            <section class="rato">
-                <h2>Características Destacadas</h2>
-                <div class="reco"> <strong>Integración Total:</strong> Todos los departamentos conectados en una sola plataforma.
-                </div>
-                <div class="reco">
-                    <strong>Análisis en Tiempo Real:</strong> Informes y estadísticas actualizadas.
-                </div>
-                <div class="reco">
-                <strong>Automatización:</strong> Procesos repetitivos gestionados automáticamente.
-                </div>
-                <div class="reco">
-                    <strong>Seguridad Avanzada:</strong> Protección de datos empresariales.
-                </div>
-            </section>
-           
-
-
-
-        <section class="tato">
-                <h2>Lo que dicen nuestros clientes</h2>
-            <section>
-                <div class="reco">
-                    <p>"Implementar este sistema ERP ha sido una de las mejores decisiones para nuestra empresa. Hemos reducido costos operativos en un 30% y mejorado la eficiencia en todos los departamentos."</p>
-                <p><strong>Carlos Rodríguez</strong> - Director de Operaciones, Tecnosoluciones S.A.</p>
-                </div>
-                <div class="reco">
-                    <p>"La integración de todos nuestros procesos en un solo sistema nos ha permitido tener una visión global del negocio. La toma de decisiones es ahora mucho más ágil y basada en datos reales."</p>
-                <p><strong>Elena Martínez</strong> - CEO, Distribuciones Globales</p>
-                </div>
-                <div class="reco">
-            <p>"El soporte técnico ha sido excepcional durante todo el proceso de implementación. El sistema es intuitivo y nuestro equipo se adaptó rápidamente a la nueva plataforma."</p>
-                <p><strong>Miguel Fernández</strong> - Director de TI, Innova Retail</p>
-                </div>
-            </section>
-        </section>
-        </main>
-        
-
-
-
-    <!-- Lo de abajo es fijo para todas las páginas -->
-        <footer>
-            <p>Soluciones integrales para la gestión empresarial moderna, optimizando procesos y mejorando resultados.</p>
-            <!-- Los símbolos de los iconos los ha puesto la IA porque se me ha olvidado la contraseña de fontawesome, los estilos de los iconos los he puesto yo -->
-            <div style="display: flex; align-items: center; gap: 18px;">
-                <a href="https://www.youtube.com/" target="_blank" title="YouTube" style="display:inline-block;">
-                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" style="width:28px;height:28px;filter:invert(1);">
-                </a>
-                <a href="https://www.instagram.com/" target="_blank" title="Instagram" style="display:inline-block;">
-                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style="width:28px;height:28px;filter:invert(1);">
-                </a>
-                <a href="https://www.facebook.com/" target="_blank" title="Facebook" style="display:inline-block;">
-                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" style="width:28px;height:28px;filter:invert(1);">
-                </a>
-                <a href="https://x.com/" target="_blank" title="X (Twitter)" style="display:inline-block;">
-                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X" style="width:28px;height:28px;filter:invert(1);">
-                </a>
+    <section id="precios" class="section">
+        <h2>Precios</h2>
+        <div class="precio-container">
+            <div class="precio">
+                <h3>Paquete Básico</h3>
+                <p>Desde 500€</p>
+                <ul>
+                    <li>Consultoría inicial</li>
+                    <li>Diseño preliminar</li>
+                    <li>2 revisiones</li>
+                </ul>
+                <button>Comprar</button>
             </div>
-            <p> 2025 SGE. Todos los derechos reservados.</p>
-        </footer>
+            <div class="precio">
+                <h3>Paquete Avanzado</h3>
+                <p>Desde 1500€</p>
+                <ul>
+                    <li>Consultoría completa</li>
+                    <li>Diseño completo</li>
+                    <li>Mayor flexibilidad</li>
+                    <li>Mayor velocidad</li>
+                    <li>Soporte durante construcción</li>
+                </ul>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
 
+    <section id="faq" class="section">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-container">
+            <div class="faq-col">
+                <div class="faq-card">
+                    <h4>¿Cuánto cuesta contratar un arquitecto?</h4>
+                    <p>Los precios dependen del tamaño y complejidad del proyecto. Consultar los paquetes para más detalles.</p>
+                </div>
+                <div class="faq-card">
+                    <h4>¿En qué consiste el proceso de diseño?</h4>
+                    <p>El proceso incluye reuniones iniciales, diseño preliminar, revisiones y entrega de planos finales.</p>
+                </div>
+            </div>
+            <div class="faq-col">
+                <div class="faq-card">
+                    <h4>¿Cuánto tiempo tarda en completarse un proyecto?</h4>
+                    <p>El tiempo varía según la complejidad, pero generalmente entre 2 a 4 meses.</p>
+                </div>
+                <div class="faq-card">
+                    <h4>¿Puedo hacer cambios durante el proceso?</h4>
+                    <p>Sí, ofrecemos revisiones para ajustarnos a tus necesidades durante todo el proceso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <form id="contacto-form" aria-labelledby="contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required aria-required="true">
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required aria-required="true">
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="123-456-7890">
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required aria-required="true"></textarea>
+            
+            <button type="submit" aria-label="Enviar mensaje">Enviar</button>
+        </form>
+        <div id="confirmacion" style="display: none;">¡Gracias por contactarnos! Te responderemos pronto.</div>
+    </section>
 
+    <a href="#acerca" id="volver-arriba" style="display: block; text-align: center; margin: 20px 0;">Volver arriba</a>
 
-
-
-
-
-
-        <script>
-  const btn = document.getElementById('hamburguesa');
-  const menu = document.getElementById('lista');
-
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('ocultar');
-  });
-
-            let aceptar;
-            aceptar = window.prompt("Introduce 'aceptar', para indicar que estas de acuerdo con el uso de cookies ");
-            if (aceptar === "aceptar"){
-                window.alert("Gracias por aceptar nuestras cookies");
-            }
-            else{
-                window.alert("¿No aceptas las cookies? Nos da igual, las vamos a usar igual");
-            }
-        </script>
-    </body>
+    <footer>
+        <p>&copy; 2025 José Sánchez Galeote. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script>
+        document.getElementById('contacto-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('confirmacion').style.display = 'block';
+        });
+    </script>
+</body>
 </html>
-
